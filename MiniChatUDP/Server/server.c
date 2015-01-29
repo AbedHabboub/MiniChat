@@ -121,7 +121,7 @@ void TraitementClavier(void)
 			fflush(stdout);
 			if (client)
 			{
-				sprintf(message, "The client '%s' is quit.", client->name);
+				sprintf(message, "The client '%s' has quit.", client->name);
 				fflush(stdout);
 				vector_foreach(_s_clients, message, send_broadcast_msg);
 				printf("%s\n", message);

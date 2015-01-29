@@ -329,13 +329,11 @@ int main(int argc, char** argv)
 			{ 
 				/* STDIN*/
 				TraitementClavier();
-				//receive_user_data();
 			}
 			else if (FD_ISSET(_s_server_socket, &readf))
 			{
 				/*SOCKET*/
-				//TraitementSock();
-				receive_client_data();
+				TraitementSock();
 			}
 		}
 	}
